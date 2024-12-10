@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    environment:
+      - MONGODB_HOST=${MONGODB_HOST}
+      - MONGODB_USER=${MONGODB_USER}
+      - MONGODB_PASS=${MONGODB_PASS}
+      - MINIO_ACCESSKEY=${MINIO_ACCESSKEY}
+      - MINIO_SECRETKEY=${MINIO_SECRETKEY}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - BOT_ID=${BOT_ID}
+      - GUILD_ID=${GUILD_ID}
+      - MY_ID=${MY_ID}
+      - ME_ID=${ME_ID}
+    restart: always

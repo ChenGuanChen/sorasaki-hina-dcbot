@@ -1,0 +1,74 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hina-dcbot
+  namespace: sorasaki-hina
+  labels:
+    app: hina-dcbot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hina-dcbot
+  template:
+    metadata:
+      labels:
+        app: hina-dcbot
+    spec:
+      containers:
+      - name: dcbot
+        image: 'gitea.konchin.com/services/sorasaki-hina-dcbot:latest'
+        env:
+          - name: MONGODB_HOST
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: MONGODB_HOST
+          - name: MONGODB_USER
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: MONGODB_USER
+          - name: MONGODB_PASS
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: MONGODB_PASS
+          - name: MINIO_ACCESSKEY
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: MINIO_ACCESSKEY
+          - name: MINIO_SECRETKEY
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: MINIO_SECRETKEY
+          - name: BOT_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: BOT_TOKEN
+          - name: BOT_ID
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: BOT_ID
+          - name: GUILD_ID
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: GUILD_ID
+          - name: MY_ID
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: MY_ID
+          - name: ME_ID
+            valueFrom:
+              secretKeyRef:
+                name: dc-secret
+                key: ME_ID
+      imagePullSecrets:
+      - name: regcred
