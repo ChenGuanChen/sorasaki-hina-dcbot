@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "main": "index.ts",
   "scripts": {
-    "test": "ts-node index.ts",
-    "clean": "rm -f ./*.js ./commands/*/*.js ./classes/**.js"
+    "build": "npx tsc --build",
+    "clean": "npx tsc --build --clean",
+    "test": "ts-node index.ts"
   },
   "dependencies": {
     "@napi-rs/canvas": "^0.1.44",

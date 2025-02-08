@@ -2,36 +2,36 @@ import { APIApplicationCommandOptionChoice } from "discord.js"
 export const gacha = {
 	channel: `1136269004156186634`,
 	Pool: [
-		{name: `fes3_hina`, value: `fes3_hina`},
-		{name: `fes3_hoshino`, value: `fes3_hoshino`},
-		{name: `Aru_dress`, value: `Aru_dress`},
-		{name: `Kayoko_dress`, value: `Kayoko_dress`},
+		{name: `fes3.5_Hoshino`, value: `fes3.5_Hoshino`},
+		{name: `fes3.5_Kuroko`, value: `fes3.5_Kuroko`},
+		{name: `Saori_swimsuit`, value: `Saori_swimsuit`},
+		{name: `Hiori_swimsuit`, value: `Hiori_swimsuit`},
 		{name: `normal`, value: `norm`},
 	] as Array<APIApplicationCommandOptionChoice<string>>,
 	Pickup: [
 		{
-			name: `fes3_hina`,
-			pk: `Hina_dress_3_fes`,
-			semi_pk: [`Mika_3_fes`, `Hoshino_swimsuit_3_fes`, `Wakamo_3_fes`, `Hanako_swimsuit_3_fes`],
+			name: `fes3.5_Hoshino`,
+			pk: `Hoshino_armed_3_fes`,
+			semi_pk: [`Mika_3_fes`, `Hoshino_swimsuit_3_fes`, `Wakamo_3_fes`, `Hanako_swimsuit_3_fes`, `Hina_dress_3_fes`, `Kuroko_terror_3_fes`],
 			non_pk: undefined,
 		},
 		{
-			name: `fes3_hoshino`,
-			pk: `Hoshino_swimsuit_3_fes`,
-			semi_pk: [`Mika_3_fes`, `Hina_dress_3_fes`, `Wakamo_3_fes`, `Hanako_swimsuit_3_fes`],
-			non_pk: undefined,
+			name: `fes3.5_Kuroko`,
+			pk: `Kuroko_terror_3_fes`,
+			semi_pk: [`Mika_3_fes`, `Hoshino_swimsuit_3_fes`, `Wakamo_3_fes`, `Hanako_swimsuit_3_fes`, `HIna_dress_3_fes`, `Hoshino_ared_3_fes`, ],
+			non_pk: undefined
 		},
 		{
-			name: `Aru_dress`,
-			pk: `Aru_dress_3`,
+			name: `Saori_swimsuit`,
+			pk: `Saori_swimsuit_3_fes`,
 			semi_pk: undefined,
-			non_pk: [`Kayoko_dress_3`,],
+			non_pk: [`Hiori_swimsuit_3_fes`,],
 		},
 		{
-			name: `Kayoko_dress`,
-			pk: `Kayoko_dress_3`,
+			name: `Hiori_swimsuit`,
+			pk: `Hiori_swimsuit_3_fes`,
 			semi_pk: undefined,
-			non_pk: [`Aru_dress_3`, ],
+			non_pk: [`Saori_swimsuit_3_fes`],
 		},
 		{
 			name: `norm`,

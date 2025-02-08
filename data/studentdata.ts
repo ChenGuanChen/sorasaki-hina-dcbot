@@ -95,6 +95,16 @@ export const studentBook = {
         ["Hare_camp_3", "<:Hare_camp_3:1265012271642443866>"],
         ["Aru_dress_3", "<:Aru_dress_3:1276191517362618490>"],
         ["Kayoko_dress_3", "<:Kayoko_dress_3:1276191519711428630>"],
+        ["Akari_newyear_3", "<:Akari_newyear_3:1324401942339784724>"],
+        ["Umika_3", "<:Umika_3:1324401944592384112>"],
+        ["Tsubaki_guide_3", "<:Tsubaki_guide_3:1324401947205308436>"],
+        ["Kirara_3", "<:Kirara_3:1324401950149705798>"],
+        ["Momoi_maid_3", "<:Momoi_maid_3:1324402446310572164>"],
+        ["Midori_maid_3", "<:Midori_maid_3:1324402444737712138>"],
+        ["Serika_swimsuit_3", "<:Serika_swimsuit_3:1324402451754778665>"],
+        ["Kanna_swimsuit_3", "<:Kanna_swimsuit_3:1324402442418388992>"],
+        ["Fubuki_swimsuit_3", "<:Fubuki_swimsuit_3:1324402439578845265>"],
+        ["Moe_swimsuit_3", "<:Moe_swimsuit_3:1336961681921806432>"]
     ],
     star2: [
         ["Mari_2", "<:Mari_2:1134303162606551112>"],
@@ -162,5 +172,11 @@ export const studentBook = {
         ["Ako_dress_3_fes", "<:Ako_dress_3_fes:1265011967194697772>"],
         ["Makoto_3_fes", "<:Makoto_3_fes:1265011973091758202>"],
         ["Hina_dress_3_fes", "<:Hina_dress_3_fes:1265011970227310733>"],
+        ["Kazusa_band_3_fes", "<:Kazusa_band_3_fes:1324401494572797993>"],
+        ["Yoshimi_band_3_fes", "<:Yoshimi_band_3_fes:1324401435412004864>"],
+        ["Hoshino_armed_3_fes", "<:Hoshino_armed_3_fes:1337000672674975774>"],
+        ["Kuroko_terror_3_fes", "<:Kuroko_terror_3_fes:1337000684125683773>"],
+        ["Saori_swimsuit_3_fes", "<:Saori_swimsuit_3_fes:1337000636767670292>"],
+        ["Hiori_swimsuit_3_fes", "<:Hiori_wsimsuit_3_fes:1337000656686551081>"],
     ],
 };
